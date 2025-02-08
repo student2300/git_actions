@@ -1,12 +1,29 @@
-name:  Hello
-on: 
-    push:
-        branches: ["master"]
-    schedule:
-        - cron: "* * * * *"
+name: Daily Commit Workflow
+
+on:
+  schedule:
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
 jobs:
-  TimeKeep:
+  daily-commit:
     runs-on: ubuntu-latest
+
     steps:
-        - name: 23f2000959@ds.study.iitm.ac.in is waving at you
-          run: echo "I am saying Hello"
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Git configuration with email 23f2000959@ds.study.iitm.ac.in
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "23f2000959@ds.study.iitm.ac.in"
+
+      - name: Make a daily commit
+        run: |
+          echo "Update at $(date)" >> README.md
+          
+          git add README.md
+          
+          git commit -m "Daily commit at $(date)"
+          
+          git push origin main
