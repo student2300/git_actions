@@ -20,4 +20,10 @@ jobs:
 
       - name: Make a daily commit
         run: |
-          git branch -m main
+          echo "Update at $(date)" >> README.md
+          
+          git add README.md
+          
+          git commit -m "Daily commit at $(date)"
+          
+          git push origin main
