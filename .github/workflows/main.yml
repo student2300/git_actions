@@ -9,5 +9,6 @@ jobs:
   TimeKeep:
     runs-on: ubuntu-latest
     steps:
+        - uses: actions/checkout@v1
         - name: 23f2000959@ds.study.iitm.ac.in is waving at you
           run: echo "I am saying Hello"
