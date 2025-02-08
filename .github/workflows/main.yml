@@ -7,7 +7,7 @@ jobs:
   TimeKeep:
     runs-on: ubuntu-latest
     steps:
-        - name: 23f2000959@ds.study.iitm.ac.in is Setting Up Python
+        - name: 23f2000959@ds.study.iitm.ac.in is Setting Up Python one
           uses: actions/checkout@v2
 
         - name: 23f2000959@ds.study.iitm.ac.in is setting up Python two
