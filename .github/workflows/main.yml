@@ -10,13 +10,5 @@ jobs:
   TimeKeep:
     runs-on: ubuntu-latest
     steps:
-        - name: 23f2000959@ds.study.iitm.ac.in is Setting Up Python one
-          uses: actions/checkout@v2
-
-        - name: 23f2000959@ds.study.iitm.ac.in is setting up Python two
-          uses: actions/setup-python@v5
-          with: 
-            python-version: '3.11'
-
-        - name: 23f2000959@ds.study.iitm.ac.in is keeping Time
-          run: python main.py
+        - name: 23f2000959@ds.study.iitm.ac.in is waving at you
+          run: echo "I am saying Hello"
