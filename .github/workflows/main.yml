@@ -15,7 +15,7 @@ jobs:
 
       - name: Set up Git configuration with email 23f2000959@ds.study.iitm.ac.in
         run: |
-          git config --global user.name "GitHub Actions"
+          git config --global user.name "student2300"
           git config --global user.email "23f2000959@ds.study.iitm.ac.in"
 
       - name: Make a daily commit
