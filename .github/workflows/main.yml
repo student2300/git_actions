@@ -26,4 +26,4 @@ jobs:
           
           git commit -m "Daily commit at $(date)"
           
-          git push origin main
+          git push origin master
