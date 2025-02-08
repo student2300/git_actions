@@ -1,5 +1,4 @@
-name:  Time Keeper
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name:  Hello
 on: 
     push:
         branches:
